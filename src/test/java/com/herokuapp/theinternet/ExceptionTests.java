@@ -50,7 +50,7 @@ public class ExceptionTests {
 
 	}
 
-	@Test(priority=1)
+	@Test(priority = 1)
 	public void notVisibleTest() {
 
 		// abrir pagina de pruebas
@@ -76,7 +76,7 @@ public class ExceptionTests {
 
 	}
 
-	@Test(priority=2)
+	@Test(priority = 2)
 	public void timeOutTest() {
 
 		// abrir pagina de pruebas
@@ -107,7 +107,7 @@ public class ExceptionTests {
 
 	}
 
-	@Test(priority=3)
+	@Test(priority = 3)
 	public void noSuchElementTest() {
 
 		// abrir pagina de pruebas
@@ -118,12 +118,12 @@ public class ExceptionTests {
 
 		WebElement startButton = driver.findElement(By.xpath("//div[@id='start']/button[.='Start']"));
 		startButton.click();
-		
-		WebDriverWait wait = new WebDriverWait(driver, 10);
-		Assert.assertTrue(ExpectedConditions.textToBePresentInElementLocated(By.xpath("//div[@id='finish']/h4[.='Hello World!']")), "Hello World!", "Could't found the message Hello World!");
-		
-		
-		
+
+		//WebDriverWait wait = new WebDriverWait(driver, 10);
+		//Assert.assertTrue(
+		//		wait.until(ExpectedConditions.(By.xpath("//div[@id='finish']/h4[.='Hello World!']"), "Hello World!"),
+		//				"Could't found the message 'Hello World!'");
+
 		/*
 		 * WebElement textHello =
 		 * wait.until(ExpectedConditions.presenceOfElementLocated(By.
